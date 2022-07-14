@@ -7,5 +7,20 @@ type Props = {
 };
 
 export default function Body({ children }: Props) {
-  return <div>{children}</div>;
+  return (
+    <StyledMain>
+      <StyledBody>{children}</StyledBody>
+    </StyledMain>
+  );
 }
+
+const StyledMain = styled.main`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+`;
+
+const StyledBody = styled.div`
+  width: 80vw;
+  max-width: 900px;
+`;
