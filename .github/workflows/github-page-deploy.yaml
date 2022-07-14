@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: git config --global user.email "action@github.com"
-      - run: git config --global usermname "Github Action"
+      - run: git config --global username "Github Action"
       - uses: ./.github/actions/build-and-publish
