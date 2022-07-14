@@ -3,6 +3,7 @@
 	<h2>Solana Philippines Website</h2>
 </div>
 
+[![github-page-deploy](https://github.com/solana-philippines/solana-philippines.github.io/actions/workflows/github-page-deploy.yaml/badge.svg?branch=main&event=push)](https://github.com/solana-philippines/solana-philippines.github.io/actions/workflows/github-page-deploy.yaml)
 
 <div align="center">
 <h4>Site Builders</h4>
