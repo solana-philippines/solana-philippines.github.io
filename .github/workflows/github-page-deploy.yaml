@@ -12,6 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Build
+        uses: ./.github/actions/build-and-publish
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
