@@ -1,5 +1,5 @@
-name: 'Build Site and Deploy to gh-page branch'
-description: 'Builds React App and Deploys to gh-pages branch'
+name: 'Build Site'
+description: 'Builds React Application'
 runs:
   using: 'composite'
   steps:
@@ -11,9 +11,4 @@ runs:
     - name: Build application
       run: |
         yarn run build
-      shell: bash
-
-    - name: Deploy to gh-pages
-      run: |
-        yarn run deploy
       shell: bash
