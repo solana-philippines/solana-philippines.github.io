@@ -10,4 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - run: |
+        git config --global user.email "action@github.com"
+        git config --global usermname "Github Action"
       - uses: ./.github/actions/build-and-publish
