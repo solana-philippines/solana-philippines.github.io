@@ -1,0 +1,11 @@
+name: github-page-deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-publish:
+    steps:
+      - uses: ./.github/actions/build-and-publish
