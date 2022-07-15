@@ -41,12 +41,12 @@ const GlobalStyle = createGlobalStyle`
   }
 
   .body-text-size {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: Lato Regular;
   }
 
   .secondary-text-size {
-    font-size: 0.5em;
+    font-size: 0.8em;
     font-family: Lato Regular;
   }
 `;
