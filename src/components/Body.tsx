@@ -3,7 +3,7 @@ import { ReactChild } from "react";
 import styled from "styled-components";
 
 type Props = {
-  children?: ReactChild;
+  children?: ReactChild[];
 };
 
 export default function Body({ children }: Props) {
@@ -22,7 +22,7 @@ const StyledMain = styled.main`
 
 const StyledBody = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 80vw;
   max-width: 900px;
 `;
