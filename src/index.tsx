@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./index.css";
 import Home from "./pages/Home/Home";
+import NotFound from "./pages/NotFound/NotFound";
 import { GlobalStyle } from "./constants";
 
 const root = ReactDOM.createRoot(
@@ -17,6 +18,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
