@@ -3,6 +3,9 @@ import { createGlobalStyle } from "styled-components";
 const Colors = {
   BLACK: "#000000",
   WHITE: "#FFFFFF",
+  RED: "#CE1126",
+  YELLOW: "#FCD116",
+  BLUE: "#0038A8",
 };
 
 const GlobalStyle = createGlobalStyle`
@@ -24,22 +27,27 @@ const GlobalStyle = createGlobalStyle`
 
   .header-text-size {
     font-size: 10em;
+    font-family: Lato Black;
   }
 
   .subheader-text-size {
     font-size: 5em;
+    font-family: Lato Bold;
   }
 
   .section-text-size {
     font-size: 3em;
+    font-family: Lato Black;
   }
 
   .body-text-size {
-    font-size: 1em;
+    font-size: 1.2em;
+    font-family: Lato Regular;
   }
 
   .secondary-text-size {
     font-size: 0.5em;
+    font-family: Lato Regular;
   }
 `;
 

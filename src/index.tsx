@@ -4,6 +4,7 @@ import reportWebVitals from "./reportWebVitals";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import "./index.css";
 import Home from "./pages/Home/Home";
 import { GlobalStyle } from "./constants";
 
