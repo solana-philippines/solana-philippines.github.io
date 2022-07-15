@@ -8,8 +8,6 @@ import Section from "../../components/Section";
 import Paragraph from "../../components/Paragraph";
 import Spacer from "../../components/Spacer";
 
-import { Colors } from "../../constants";
-
 export default function Home() {
   return (
     <>
@@ -77,9 +75,4 @@ const StyledGithub = styled.img`
   @media only screen and (max-width: 768px) {
     width: 5em;
   }
-`;
-
-const StyledImg = styled.img`
-  width: 100%;
-  max-width: 100px;
 `;

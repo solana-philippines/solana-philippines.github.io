@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-import { Colors } from "../constants";
-
-type Props = {};
-
 export default function Navbar() {
   return (
     <StyledNav>

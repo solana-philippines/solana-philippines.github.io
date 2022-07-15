@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 import Section from "./Section";
-import { Colors } from "../constants";
-
-type Props = {};
 
 export default function Footer() {
   return (
