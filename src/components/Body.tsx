@@ -3,7 +3,7 @@ import { ReactChild } from "react";
 import styled from "styled-components";
 
 type Props = {
-  children?: ReactChild[];
+  children?: ReactChild[] | ReactChild;
 };
 
 export default function Body({ children }: Props) {
