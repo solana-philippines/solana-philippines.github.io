@@ -21,6 +21,8 @@ const StyledMain = styled.main`
 `;
 
 const StyledBody = styled.div`
+  display: flex;
+  flex-direction: row;
   width: 80vw;
   max-width: 900px;
 `;
