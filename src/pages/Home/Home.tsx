@@ -7,6 +7,7 @@ import Footer from "../../components/Footer";
 import Section from "../../components/Section";
 import Paragraph from "../../components/Paragraph";
 import Spacer from "../../components/Spacer";
+import TextLink from "../../components/TextLink";
 
 export default function Home() {
   return (
@@ -21,8 +22,8 @@ export default function Home() {
 
         <StyledHeader>Built by Filipinos, for Everyone</StyledHeader>
 
-        <Section columns={1}>
-          <Section columns={1}>
+        <Section>
+          <Section>
             <Header text="About" size={4} />
             <Paragraph
               lineHeight={2}
@@ -30,7 +31,7 @@ export default function Home() {
             />
           </Section>
 
-          <Section columns={1}>
+          <Section>
             <Header text="Vision" size={4} />
             <Paragraph
               lineHeight={2}
@@ -38,7 +39,7 @@ export default function Home() {
             />
           </Section>
 
-          <Section columns={1}>
+          <Section>
             <Header text="Mission" size={4} />
             <Paragraph
               lineHeight={2}
@@ -47,6 +48,16 @@ export default function Home() {
           </Section>
         </Section>
       </Body>
+      <Section>
+        <StyledGradient>
+          <Section columns={2}>
+            <Header text="How to reach us?" size={3} />
+            <a href="https://github.com/solana-philippines">
+              <StyledGithub src="/assets/logos/github.svg" alt="Github Logo" />
+            </a>
+          </Section>
+        </StyledGradient>
+      </Section>
       <Footer />
     </>
   );
@@ -73,6 +84,19 @@ const StyledGithub = styled.img`
     }
 
   @media only screen and (max-width: 768px) {
-    width: 5em;
-  }
+    width: 5em; }
+`;
+
+const StyledGradient = styled.section`
+  min-height: 15em;
+  padding: 5vh 8vw;
+  box-sizing: border-box;
+
+  background: rgb(252, 209, 22);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 209, 22, 1) 0%,
+    rgba(0, 56, 168, 1) 29%,
+    rgba(206, 17, 38, 1) 100%
+  );
 `;

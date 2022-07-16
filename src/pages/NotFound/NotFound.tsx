@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 import Body from "../../components/Body";
 import Navbar from "../../components/Navbar";
-import Header from "../../components/Header";
 
 export default function NotFound() {
   return (
@@ -45,14 +44,4 @@ const StyledHeader = styled.header`
 
 const StyledSubheader = styled.header`
   font-family: Lato Regular;
-`;
-
-const StyledGithub = styled.img`
-  width: 7em;
-  filter: invert(87%) sepia(100%) saturate(29%) hue-rotate(129deg) brightness(108%) contrast(106%);
-    }
-
-  @media only screen and (max-width: 768px) {
-    width: 5em;
-  }
 `;
