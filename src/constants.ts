@@ -27,27 +27,22 @@ const GlobalStyle = createGlobalStyle`
 
   .header-text-size {
     font-size: 10em;
-    font-family: Lato Black;
   }
 
   .subheader-text-size {
     font-size: 5em;
-    font-family: Lato Bold;
   }
 
   .section-text-size {
     font-size: 3em;
-    font-family: Lato Black;
   }
 
   .body-text-size {
     font-size: 1em;
-    font-family: Lato Regular;
   }
 
   .secondary-text-size {
     font-size: 0.8em;
-    font-family: Lato Regular;
   }
 `;
 
