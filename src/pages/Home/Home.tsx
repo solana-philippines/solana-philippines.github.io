@@ -7,7 +7,6 @@ import Footer from "../../components/Footer";
 import Section from "../../components/Section";
 import Paragraph from "../../components/Paragraph";
 import Spacer from "../../components/Spacer";
-import TextLink from "../../components/TextLink";
 
 export default function Home() {
   return (
