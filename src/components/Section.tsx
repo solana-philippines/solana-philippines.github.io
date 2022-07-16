@@ -1,4 +1,4 @@
-import { ReactChild } from "react";
+import { ReactNode } from "react";
 
 import styled from "styled-components";
 
@@ -8,7 +8,7 @@ const DEFAULT_BREAKPOINT = 768;
 type Props = {
   columns?: number;
   breakpoint?: number;
-  children?: ReactChild[] | ReactChild;
+  children?: ReactNode[] | ReactNode;
 };
 
 export default function Section({ columns, breakpoint, children }: Props) {
@@ -28,6 +28,7 @@ const StyledGrid = styled.section<{ cols: number; bpoint: number }>`
 
   margin: 2em 0;
   column-gap: 2em;
+  row-gap: 1em;
 
   @media only screen and (max-width: ${({ bpoint }) => bpoint}px) {
     grid-template-columns: 1fr;

@@ -1,9 +1,8 @@
-import { ReactChild } from "react";
-
+import { ReactNode } from "react";
 import styled from "styled-components";
 
 type Props = {
-  children?: ReactChild[] | ReactChild;
+  children?: ReactNode[] | ReactNode;
 };
 
 export default function Body({ children }: Props) {
