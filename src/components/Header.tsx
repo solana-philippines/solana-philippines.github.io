@@ -21,4 +21,6 @@ const StyledHeader = styled.h1<{ sizing: number }>`
   margin: ${({ sizing }) => 1 / sizing}em 0;
   font-size: ${({ sizing }) => 1 / sizing}em;
   width: 100%;
+
+  font-family: Lato Bold;
 `;

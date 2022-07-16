@@ -21,4 +21,6 @@ export default function Header({ text, lineHeight }: Props) {
 const StyledParagraph = styled.p<{ height: number }>`
   line-height: ${({ height }) => height}em;
   width: 100%;
+
+  font-family: Lato Regular;
 `;
