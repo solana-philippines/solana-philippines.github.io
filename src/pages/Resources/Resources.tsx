@@ -1,47 +1,48 @@
-import styled from "styled-components";
+import React from "react";
 
+import Header from "../../components/Header";
 import Body from "../../components/Body";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
+import Spacer from "../../components/Spacer";
+import Paragraph from "../../components/Paragraph";
+import Section from "../../components/Section";
 
-export default function Resources() {
-  return (
-    <>
-      <Navbar />
-      <Body>
-        <StyledMain>
-          <StyledHeader className="subheader-text-size">
-            Coming Soon
-          </StyledHeader>
-          <StyledSubheader className="section-text-size">
-            Building @ Solana Summer Camp
-          </StyledSubheader>
-        </StyledMain>
-      </Body>
-    </>
-  );
-}
+import Card from "./components/Card";
 
-const StyledMain = styled.main`
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
+import { StyledHeader } from "./modules/Resources.styled";
+import { BEGINNER_RESOURCES } from "./constants";
 
-const StyledHeader = styled.header`
-  font-family: Lato Black;
-  background: #fcd116;
-  background: linear-gradient(to right, #fcd116 0%, #0038a8 51%, #ce1126 66%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+const Resources: React.FC = () => (
+  <>
+    <Navbar />
+    <Body>
+      <Spacer size={5} />
+      <StyledHeader className="subheader-text-size">Resources</StyledHeader>
+      <Spacer size={3} />
+      <Header text={"Beginner? Start Here."} size={4} />
+      <Paragraph lineHeight={2} text="Grassroots for Solana knowledge." />
+      <Section columns={2}>
+        {BEGINNER_RESOURCES.map((resource) => (
+          <Card
+            title={resource.title}
+            description={resource.description}
+            imgSrc={resource.imgPath}
+            externalUrl={resource.externalUrl}
+            tags={resource.tags}
+          />
+        ))}
+      </Section>
+      <Header text={"Feeling confident? Get This."} size={4} />
+      <Paragraph
+        lineHeight={2}
+        text="Knowledge for the self-motivated learner."
+      />
+      <Header text={"You're all grown up!"} size={4} />
+      <Paragraph lineHeight={2} text="Time to go on that adventure yourself!" />
+    </Body>
+    <Footer />
+  </>
+);
 
-  @media only screen and (max-width: 768px) {
-    margin-top: 0.5em;
-    font-size: 4em;
-  }
-`;
-
-const StyledSubheader = styled.header`
-  font-family: Lato Regular;
-`;
+export default Resources;
