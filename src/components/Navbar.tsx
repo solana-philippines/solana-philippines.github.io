@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useRef } from "react";
 import Icon from "./Icon";
 import Spacer from "./Spacer";
 
