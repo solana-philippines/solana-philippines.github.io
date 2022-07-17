@@ -8,11 +8,9 @@ import Footer from "../../components/Footer";
 import Spacer from "../../components/Spacer";
 import Paragraph from "../../components/Paragraph";
 import Section from "../../components/Section";
-import Icon from "../../components/Icon";
 
 import Card from "./components/Card";
 
-import { StyledHeader } from "./modules/Resources.styled";
 import {
   BEGINNER_RESOURCES,
   INTERMEDIATE_RESOURCES,
