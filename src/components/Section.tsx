@@ -28,7 +28,7 @@ const StyledGrid = styled.section<{ cols: number; bpoint: number }>`
 
   margin: 2em 0;
   column-gap: 2em;
-  row-gap: 1em;
+  row-gap: 2em;
 
   @media only screen and (max-width: ${({ bpoint }) => bpoint}px) {
     grid-template-columns: 1fr;

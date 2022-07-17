@@ -1,7 +1,12 @@
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import Icon from "./Icon";
 
-import { Colors } from "../constants";
+import {
+  StyledMenu,
+  StyledNav,
+  StyledLeft,
+  StyledRight,
+  StyledLink,
+} from "./modules/Navbar.styled";
 
 type Props = {
   text: string;
@@ -15,18 +20,6 @@ function Navlink({ text, url }: Props) {
     </StyledLink>
   );
 }
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: ${Colors.WHITE};
-  margin-left: 2em;
-
-  font-family: Lato Bold;
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
 
 export default function Navbar() {
   return (
@@ -44,40 +37,9 @@ export default function Navbar() {
         <Navlink text="Roadmap" url="/roadmap" />
         <Navlink text="Resources" url="/resources" />
       </StyledRight>
+      <StyledMenu>
+        <Icon symbol="menu" size={2} />
+      </StyledMenu>
     </StyledNav>
   );
 }
-
-const StyledNav = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  height: 10vh;
-  box-sizing; border-box;
-  padding: 0 3em;
-`;
-
-const StyledLeft = styled.div`
-  display: flex;
-  align-items: center;
-
-  img {
-    margin-right: 1em;
-    width: 3em;
-  }
-
-  h3 {
-    color: ${Colors.WHITE};
-    font-family: Lato Bold;
-
-    @media only screen and (max-width: 768px) {
-      display: none;
-    }
-  }
-`;
-
-const StyledRight = styled.div`
-  display: flex;
-  align-items: center;
-`;
