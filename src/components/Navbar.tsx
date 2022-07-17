@@ -1,5 +1,6 @@
-import { FC, useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Icon from "./Icon";
+import Spacer from "./Spacer";
 
 import {
   StyledMenu,
@@ -31,7 +32,7 @@ const MobileNavlink = ({ text, url }: Props) => (
 );
 
 const Navbar = () => {
-  const [mobileNavState, setMobileNavState] = useState(false);
+  const [mobileNavState] = useState(false);
   const mobileDropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -78,6 +79,7 @@ const Navbar = () => {
           <MobileNavlink text="Projects" url="/projects" />
           <MobileNavlink text="Roadmap" url="/roadmap" />
           <MobileNavlink text="Resources" url="/resources" />
+          <Spacer size={5} />
         </StyledMDDropdown>
       </StyledMobileNav>
     </>
