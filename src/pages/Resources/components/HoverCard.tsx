@@ -1,5 +1,5 @@
-import React from "react";
+import { FC } from "react";
 
-const HoverCard: React.FC = () => <></>;
+const HoverCard: FC = () => <></>;
 
 export default HoverCard;

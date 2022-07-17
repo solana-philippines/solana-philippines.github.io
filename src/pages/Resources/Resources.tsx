@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 
 import Header from "../../components/Header";
 import GradientHeader from "../../components/GradientHeader";
@@ -17,7 +17,7 @@ import {
   ADVANCE_RESOURCES,
 } from "./constants";
 
-const Resources: React.FC = () => (
+const Resources: FC = () => (
   <>
     <Navbar />
     <Body>
@@ -27,11 +27,11 @@ const Resources: React.FC = () => (
       <Header text={"Beginner? Start Here."} size={4} />
       <Paragraph lineHeight={2} text="Grassroots for Solana knowledge." />
       <Section columns={2}>
-        {BEGINNER_RESOURCES.map((resource) => (
+        {BEGINNER_RESOURCES.map((resource, idx) => (
           <Card
+            key={idx}
             title={resource.title}
             description={resource.description}
-            imgSrc={resource.imgPath}
             externalUrl={resource.externalUrl}
             tags={resource.tags}
           />
@@ -45,11 +45,11 @@ const Resources: React.FC = () => (
         text="Knowledge for the self-motivated learner."
       />
       <Section columns={2}>
-        {INTERMEDIATE_RESOURCES.map((resource) => (
+        {INTERMEDIATE_RESOURCES.map((resource, idx) => (
           <Card
+            key={idx}
             title={resource.title}
             description={resource.description}
-            imgSrc={resource.imgPath}
             externalUrl={resource.externalUrl}
             tags={resource.tags}
           />
@@ -60,11 +60,11 @@ const Resources: React.FC = () => (
       <Header text={"You're all grown up!"} size={4} />
       <Paragraph lineHeight={2} text="Time to go on that adventure yourself!" />
       <Section columns={2}>
-        {ADVANCE_RESOURCES.map((resource) => (
+        {ADVANCE_RESOURCES.map((resource, idx) => (
           <Card
+            key={idx}
             title={resource.title}
             description={resource.description}
-            imgSrc={resource.imgPath}
             externalUrl={resource.externalUrl}
             tags={resource.tags}
           />

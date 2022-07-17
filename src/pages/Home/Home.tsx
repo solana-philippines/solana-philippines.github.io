@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import Body from "../../components/Body";
 import Navbar from "../../components/Navbar";
 import Header from "../../components/Header";
@@ -21,7 +21,7 @@ const SECTIONS = {
 
 type SectionsKey = keyof typeof SECTIONS;
 
-const Home: React.FC = () => (
+const Home: FC = () => (
   <>
     <Navbar />
     <Body>
@@ -34,8 +34,8 @@ const Home: React.FC = () => (
       <GradientHeader text="Built by Filipinos, for Everyone" size={2} />
 
       <Section>
-        {Object.keys(SECTIONS).map((e) => (
-          <Section>
+        {Object.keys(SECTIONS).map((e, idx) => (
+          <Section key={idx}>
             <Header text={e} size={4} />
             <Paragraph lineHeight={2} text={SECTIONS[e as SectionsKey]} />
           </Section>

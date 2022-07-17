@@ -1,44 +1,30 @@
-import React from "react";
+import { FC } from "react";
 
 import Paragraph from "../../../components/Paragraph";
 
-import {
-  StyledCard,
-  StyledCardDetails,
-  StyledCardImgHolder,
-  StyledCardTags,
-} from "./Card.styled";
+import { StyledCard, StyledCardDetails, StyledCardTags } from "./Card.styled";
 
 type Props = {
   title: string;
   tags: string[];
   description: string;
-  imgSrc: string;
   externalUrl: string;
 };
 
-const Card: React.FC<Props> = ({
-  title,
-  tags,
-  description,
-  imgSrc,
-  externalUrl,
-}) => (
+const Card: FC<Props> = ({ title, tags, description, externalUrl }) => (
   <>
-    <StyledCard href={externalUrl}>
+    <StyledCard href={externalUrl} target="_blank" rel="noopener noreferrer">
       <StyledCardDetails>
-        {tags.map((t) => (
-          <StyledCardTags className="secondary-text-size">{t}</StyledCardTags>
+        {tags.map((t, idx) => (
+          <StyledCardTags key={idx} className="secondary-text-size">
+            {t}
+          </StyledCardTags>
         ))}
 
         <h1>{title}</h1>
       </StyledCardDetails>
 
       <Paragraph lineHeight={1.5} text={description} />
-
-      <StyledCardImgHolder>
-        <img src={imgSrc} alt={`${title} Thumbnail`} />
-      </StyledCardImgHolder>
     </StyledCard>
   </>
 );

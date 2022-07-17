@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import styled from "styled-components";
 
 type Props = {
@@ -6,7 +6,7 @@ type Props = {
   size: number;
 };
 
-const Icon: React.FC<Props> = ({ symbol, size }) => (
+const Icon: FC<Props> = ({ symbol, size }) => (
   <StyledSpan fontSize={size} className="material-symbols-rounded">
     {symbol}
   </StyledSpan>
