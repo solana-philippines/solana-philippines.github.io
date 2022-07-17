@@ -115,7 +115,8 @@ const ADVANCE_RESOURCES: Resource[] = [
   {
     title: "Metaplex Javascript SDK",
     tags: ["Documentation", "Javascript"],
-    description: "The base library for ",
+    description:
+      "This SDK helps developers get started with the on-chain tools provided by Metaplex.",
     imgPath: "/assets/images/metaplex.png",
     externalUrl: "https://github.com/metaplex-foundation/js",
   },
@@ -129,7 +130,7 @@ const ADVANCE_RESOURCES: Resource[] = [
   {
     title: "Solana SDK",
     tags: ["Documentation", "Rust"],
-    description: "The base library for Solana",
+    description: "The base library for Solana SDK.",
     imgPath: "/assets/images/solana.png",
     externalUrl: "https://docs.rs/solana-sdk/latest/solana_sdk/",
   },
