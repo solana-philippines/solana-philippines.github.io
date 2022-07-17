@@ -27,6 +27,11 @@ const GlobalStyle = createGlobalStyle`
 
   .header-text-size {
     font-size: 10em;
+
+    @media only screen and (max-width: 768px) {
+      text-wrap: break-word;
+      font-size: 7em;
+    }
   }
 
   .subheader-text-size {

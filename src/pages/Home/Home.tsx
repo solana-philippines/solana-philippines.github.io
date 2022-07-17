@@ -2,16 +2,13 @@ import React from "react";
 import Body from "../../components/Body";
 import Navbar from "../../components/Navbar";
 import Header from "../../components/Header";
+import GradientHeader from "../../components/GradientHeader";
 import Footer from "../../components/Footer";
 import Section from "../../components/Section";
 import Paragraph from "../../components/Paragraph";
 import Spacer from "../../components/Spacer";
 
-import {
-  StyledGradient,
-  StyledHeader,
-  StyledGithub,
-} from "./modules/Home.styled";
+import { StyledGradient, StyledGithub } from "./modules/Home.styled";
 
 const SECTIONS = {
   About:
@@ -34,7 +31,7 @@ const Home: React.FC = () => (
         <StyledGithub src="/assets/logos/github.svg" alt="Github Logo" />
       </a>
 
-      <StyledHeader>Built by Filipinos, for Everyone</StyledHeader>
+      <GradientHeader text="Built by Filipinos, for Everyone" size={2} />
 
       <Section>
         {Object.keys(SECTIONS).map((e) => (
