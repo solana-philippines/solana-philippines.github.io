@@ -27,11 +27,11 @@ const Card: React.FC<Props> = ({
   <>
     <StyledCard href={externalUrl}>
       <StyledCardDetails>
-        <h1>{title}</h1>
+        {tags.map((t) => (
+          <StyledCardTags className="secondary-text-size">{t}</StyledCardTags>
+        ))}
 
-        <StyledCardTags className="secondary-text-size">
-          {tags.join(", ")}
-        </StyledCardTags>
+        <h1>{title}</h1>
       </StyledCardDetails>
 
       <Paragraph lineHeight={1.5} text={description} />

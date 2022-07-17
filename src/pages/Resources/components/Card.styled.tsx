@@ -26,20 +26,22 @@ const StyledCard = styled.a`
 
 const StyledCardDetails = styled.span`
   h1 {
-    font-size: 1.5em;
-    font-family: Lato Bold;
+    font-size: 2em;
+    font-family: Lato Black;
     margin: 0.5em 0;
   }
 `;
 
 const StyledCardTags = styled.h6`
+  margin: 0 0.2em;
+  padding: 0.2em 0.5em;
+  display: inline-block;
   text-align: center;
   box-sizing: border-box;
-  padding: 1em 2em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   color: ${Colors.BLACK};
   background-color: ${Colors.WHITE};
-  font-family: Lato Regular;
+  font-family: Lato Bold;
   margin-bottom: 1em;
 `;
 
