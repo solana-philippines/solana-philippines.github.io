@@ -86,6 +86,14 @@ const INTERMEDIATE_RESOURCES: Resource[] = [
       "https://twitter.com/timurguvenkaya/status/1475843655567089676?s=20&t=mSQPMduobCkQQXimDZQJCA",
   },
   {
+    title: "Audits, Exploits, and Security on Solana",
+    tags: ["Security", "Exploits", "Auditing"],
+    description: "A non-definitive guide to Solana Security.",
+    imgPath: "/assets/images/resources/sanny.png",
+    externalUrl:
+      "https://twitter.com/0xsanny/status/1508868586890223626?s=20&t=OWf0WEsb7W7Y1i-v_c82tw",
+  },
+  {
     title: "Neodyme Blog",
     tags: ["Security"],
     description: "This blogs covers some articles on Solana security.",
