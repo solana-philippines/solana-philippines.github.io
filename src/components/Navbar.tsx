@@ -32,7 +32,7 @@ const MobileNavlink = ({ text, url }: Props) => (
 );
 
 const Navbar = () => {
-  const [mobileNavState] = useState(false);
+  const [mobileNavState] = useState(true);
   const mobileDropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
